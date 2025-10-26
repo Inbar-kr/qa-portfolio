@@ -513,17 +513,23 @@ body {
     }
     
     .main-content {
-        margin-left: auto;;
+        margin-left: auto;
+        padding: 1.5rem 1rem; /* <-- REDUCED padding */
     }
     
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 1rem; /* <-- REDUCED padding */
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem; /* <-- REDUCED font size */
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem; /* <-- ADDED this rule */
+        line-height: 1.5;
     }
     
     .hero-image {
@@ -540,6 +546,10 @@ body {
     .nav-menu {
         display: none;
     }
+
+    .nav-right {
+        margin-left: auto; /* <-- ADDED to keep "About Me" on the right */
+    }
     
     .about-card {
         padding: 2rem 1.5rem;
@@ -548,6 +558,10 @@ body {
     .about-header {
         flex-direction: column;
         text-align: center;
+    }
+
+    .status-badge {
+        margin-top: 1rem; /* <-- ADDED to give space */
     }
     
     .about-name {
