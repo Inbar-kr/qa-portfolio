@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="logo-text">QA Portfolio</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#favorites" class="nav-link">Favorite Books <span class="dropdown-arrow">▼</span></a></li>
+                    <li><a href="#shelf" class="nav-link">My Shelf <span class="dropdown-arrow">▼</span></a></li>
+                    <li><a href="#genres" class="nav-link">Favorite Genres <span class="dropdown-arrow">▼</span></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#about" class="nav-link">About Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="sidebar">
+        <a href="#" class="sidebar-link active">
+            <span class="sidebar-icon">🏠</span>
+            <span class="sidebar-text">Home</span>
+        </a>
+        <a href="#contact" class="sidebar-link">
+            <span class="sidebar-icon"><i class="fa-solid fa-paper-plane"></i></span>
+            <span class="sidebar-text">Contact</span>
+        </a>
+    </aside>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">MY READING<br>RECOMMENDATIONS</h1>
+                <p class="hero-subtitle">As a QA Tester, I'm passionate about quality both in software and in a good book.
+                                        I built this site to share my favorite reads while showcasing my skills in
+                                        web development and quality assurance.</p>
+                <button class="cta-button" onclick="location.href='#favorites'">DISCOVER MORE</button>
+            </div>
+            <div class="hero-image">
+                 <img src="images/Books.png" alt="Books">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-card">
+                <div class="about-header">
+                    <div class="about-photo">
+                        <img src="images/Profile.png" alt="Inbar Kehimker">
+                    </div>
+                    <div class="about-info">
+                        <h2 class="about-name">Inbar Kehimker</h2>
+                        <p class="about-title">QA Tester</p>
+                    </div>
+                    <span class="status-badge">Available For Work</span> 
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-bio">
+                        Hi there, You're looking at what happens when my love for great books meets my passion for great software. 
+                        I'm a QA Tester, and I built this site from scratch as a live portfolio. For me, the best way 
+                        to showcase my skills is to put them to work. I've had my hands on everything here design, 
+                        development, and most of all, testing to make sure every single part, from the big features 
+                        to the tiny details, works just right.
+                    </p>
+                    
+                    <div class="about-skills">
+                        <h3>This Site's Toolkit</h3>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>Responsive Design</li>
+                            <li>Modern UI/UX Principles</li>
+                            <li>Font Awesome Icons</li>
+                        </ul>
+                    </div>
+
+                    <div class="testing-approach">
+                        <h3>Project Highlights</h3>
+                        <p>Key features of this portfolio site:</p>
+                        <ul class="test-scenarios">
+                            <li>Interactive & Dynamic UI</li>
+                            <li>Multi-Device Responsiveness</li>
+                            <li>Anchor-based Navigation</li>
+                            <li>Clean & Modern Aesthetics</li>
+                        </ul>
+                    </div>
+                    <div class="about-links" id="contact">
+                        <a href="tel:+972556644098" class="contact-link">
+                            <span class="link-icon"><i class="fa-solid fa-phone"></i></span> Phone
+                        </a>
+                        <a href="https://linkedin.com/in/inbar-kr" class="contact-link" target="_blank">
+                            <span class="link-icon"><i class="fa-brands fa-linkedin"></i></span> LinkedIn
+                        </a>
+                        <a href="https://github.com/Inbar-kr" class="contact-link" target="_blank">
+                            <span class="link-icon"><i class="fa-brands fa-github"></i></span> GitHub
+                        </a>
+                        <a href="mailto:Inbark2010@gmail.com" class="contact-link">
+                            <span class="link-icon"><i class="fa-solid fa-envelope"></i></span> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="favorites" class="book-section">
+            <div class="section-header">
+                <h2 class="section-title">My Favorite Books</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="images/My Favorite Books/The Lord of the Rings.jpg" alt="The Lord of the Rings">
+                </div>
+                <div class="book-card">
+                    <img src="images/My Favorite Books/Fourth Wing.jpg" alt="Fourth Wing">
+                </div>
+                <div class="book-card">
+                    <img src="images/My Favorite Books/A Court of Thorns and Roses.jpg" alt="A Court of Thorns and Roses">
+                </div>
+                <div class="book-card">
+                    <img src="images/My Favorite Books/Full Measures.jpg" alt="Full Measures">
+                </div>
+                <div class="book-card">
+                    <img src="images/My Favorite Books/Harry Potter and the Prisoner of Azkaban book.jpg" alt="Harry Potter and the Prisoner of Azkaban book">
+                </div>
+            </div>
+        </section>
+
+        <section id="shelf" class="book-section">
+            <div class="section-header">
+                <h2 class="section-title">On My Shelf</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="images/On My Shelf/The Cuckoo's Calling.jpg" alt="The Cuckoo's Calling">
+                </div>
+                <div class="book-card">
+                    <img src="images/On My Shelf/The Hobbit.jpg" alt="The Hobbit">
+                </div>
+                <div class="book-card">
+                    <img src="images/On My Shelf/The Lincoln Lawyer.jpg" alt="The Lincoln Lawyer">
+                </div>
+                <div class="book-card">
+                    <img src="images/On My Shelf/The Naturals.jpg" alt="The Naturals">
+                </div>
+                <div class="book-card">
+                    <img src="images/On My Shelf/All Rhodes Lead Here.jpg" alt="All Rhodes Lead Here">
+                </div>
+            </div>
+        </section>
+
+        <section id="genres" class="book-section">
+            <div class="section-header">
+                <h2 class="section-title">My Favorite Genres</h2>
+            </div>
+            <div class="genre-grid">
+                <div class="genre-card">Fantasy</div>
+                <div class="genre-card">Science Fiction</div>
+                <div class="genre-card">Romance</div>
+                <div class="genre-card">Fiction</div>
+                <div class="genre-card">Suspense</div>
+                <div class="genre-card">Mystery</div>
+                <div class="genre-card">Crime</div>
+                <div class="genre-card">Adventure</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© Inbar Kehimker, All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
