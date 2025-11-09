@@ -57,11 +57,7 @@ body {
     font-size: 1.8rem;
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
+/* DELETED .nav-menu */
 
 .nav-link {
     color: #b0b0b0;
@@ -87,49 +83,12 @@ body {
     gap: 2rem;
 }
 
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 70px;
-    width: 70px;
-    height: calc(100vh - 70px);
-    background-color: #0f0f0f;
-    border-right: 1px solid #2a2a2a;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    z-index: 999;
-}
-
-.sidebar-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    color: #666;
-    text-decoration: none;
-    transition: all 0.3s;
-    gap: 0.3rem;
-}
-
-.sidebar-link:hover,
-.sidebar-link.active {
-    color: #D1B078;
-    background-color: #1a1a1a;
-}
-
-.sidebar-icon {
-    font-size: 1.3rem;
-}
-
-.sidebar-text {
-    font-size: 0.75rem;
-}
+/* DELETED SIDEBAR STYLES */
 
 /* Main Content */
 .main-content {
-    margin-left: calc(max(70px, (100vw - 1400px) / 2));
+    /* UPDATED MARGIN */
+    margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
     padding: 2rem;
@@ -375,79 +334,7 @@ body {
     box-shadow: 0 15px 40px rgba(209, 176, 120, 0.3);
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    border-radius: 12px;
-    border: 1px solid #2a2a2a;
-    transition: all 0.3s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-    overflow: hidden;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    border-color: #D1B078;
-    box-shadow: 0 15px 40px rgba(209, 176, 120, 0.2);
-}
-
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    margin-bottom: 1rem;
-}
-
-.project-details {
-    padding: 0 1.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.project-details h3 {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-}
-
-.project-details p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #b0b0b0;
-    margin-bottom: 1.5rem;
-}
-
-.project-button {
-    display: inline-block;
-    background-color: #D1B078;
-    color: #0f0f0f;
-    padding: 0.6rem 1.2rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.85rem;
-    align-self: center;
-    transition: background-color 0.3s;
-}
-
-.project-button:hover {
-    background-color: #B89A6A;
-}
-
+/* DELETED PROJECT-GRID and other project styles as they are not in the HTML */
 
 .contact-cta-section {
     background: rgba(42, 42, 42, 0.5);
@@ -522,14 +409,24 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
     
-    .main-content {
-        margin-left: auto;
-        padding: 1.5rem 1rem;
+    /* --- NAVBAR FIXES START HERE --- */
+    
+    .navbar {
+        padding: 1rem 1rem; /* Reduced side padding */
     }
+
+    .logo {
+        font-size: 1rem; /* Made logo smaller */
+        gap: 0.3rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Made nav links smaller */
+        letter-spacing: 0.2px;
+    }
+
+    /* --- NAVBAR FIXES END HERE --- */
     
     .hero {
         flex-direction: column;
@@ -545,22 +442,10 @@ body {
         font-size: 0.9rem;
         line-height: 1.5;
     }
-    
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .project-card img {
-        height: 150px;
-    }
-    
-    .nav-menu {
-        display: none;
-    }
 
     .nav-right {
         margin-left: auto;
+        gap: 0.75rem; /* Reduced gap between links */
     }
     
     .about-card {
