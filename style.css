@@ -281,30 +281,37 @@ body {
     font-weight: 600;
 }
 
-.skills-list,
-.test-scenarios {
+.skills-grid-small {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.8rem;
-    list-style: none;
-    padding: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
-.skills-list li,
-.test-scenarios li {
-    background-color: #2a2a2a;
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    border-left: 3px solid #D1B078;
-    color: #b0b0b0;
+.skill-tag {
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid #333; 
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
     font-size: 0.95rem;
-    transition: all 0.3s;
+    color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
-.skills-list li:hover,
-.test-scenarios li:hover {
-    background-color: #333;
-    transform: translateX(5px);
+.skill-tag i {
+    color: #D1B078;
+    font-size: 1rem;
+}
+
+.skill-tag:hover {
+    border-color: #D1B078;
+    background: rgba(209, 176, 120, 0.1);
+    color: #fff;
+    transform: translateY(-3px);
 }
 
 .project-highlights p {
