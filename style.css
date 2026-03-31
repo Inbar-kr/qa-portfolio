@@ -335,7 +335,7 @@ body {
     border: 1px solid #2a2a2a;
     padding: 2rem 1.5rem;
     transition: all 0.3s;
-    cursor: pointer;
+    cursor: default;;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 600;
